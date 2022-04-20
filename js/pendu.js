@@ -27,11 +27,13 @@ let goodLetters = 0;
 
 let divAlpha;
 
-let alphabet = ["A","B","C","D","E","F",
-		 "G","H","I","J","K","L",
-		 "M","N","O","P","Q","R",
-		 "S","T","U","V","W","X",
-		 "Y","Z"];
+let alphabet = [
+	"A","B","C","D","E","F",
+	"G","H","I","J","K","L",
+	"M","N","O","P","Q","R",
+	"S","T","U","V","W","X",
+	"Y","Z", " "
+];
 
 /* play game */
 function play() {
@@ -57,16 +59,19 @@ function createWordSpace() {
 
 /* create letters */
 function createLetters() {
+
 	/* contains letters */
 	divAlpha = document.createElement("div");
 	divAlpha.className = "alphabet";
 	document.body.insertBefore(divAlpha,p);
 
-	for (let i = 0; i < 26; i++) {
-		/* div contenant la lettre */
+	for (let i = 0; i < alphabet.length; i++) {
+
+		/* div with letter */
 		letters[i] = document.createElement("div");
 		letters[i].className = "letter";
-		/* contenu de la lettre */
+
+		/* letter content */
 		let content = document.createTextNode(alphabet[i]);
 		letters[i].appendChild(content);
 		divAlpha.appendChild(letters[i]);

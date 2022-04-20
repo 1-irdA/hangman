@@ -1,6 +1,5 @@
 body {
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
 	margin: 5%;
 }	
 
@@ -21,7 +20,7 @@ input {
 	margin-bottom: 30px;
 }
 
-/* tiret quand lettre pas trouvée */
+/* line when letter not found */
 .box {
 	width: 50px;
 	height: 10px;
@@ -33,7 +32,7 @@ input {
 	margin-top: 100px;
 }
 
-/* quand lettre trouvée */
+/* when letter found */
 .boxFound {
 	width: 50px;
 	height: 10px;
@@ -76,7 +75,9 @@ img {
 .letter {
 	text-align: center;
 	margin: 10px;
+	padding: 5px;
 	font-size: 3em;
+	border: 0.1em solid black;
 }
 
 .letter:hover {
